@@ -3,7 +3,7 @@
     src: url('Montserrat-Medium.ttf') format('truetype'); /* формат TTF */
     /* Дополнительные форматы, если нужно */
     font-weight: 300; /* либо другие веса шрифта */
-    font-style: нормальный; /* либо italic, oblique и т.д. */
+    font-style: normal; /* либо italic, oblique и т.д. */
   }
 
 @font-face {
@@ -11,7 +11,7 @@
     src: url('Roboto-Black.ttf') format('truetype'); /* формат TTF */
     /* Дополнительные форматы, если нужно */
     font-weight: 800; /* либо другие веса шрифта */
-    font-style: нормальный; /* либо italic, oblique и т.д. */
+    font-style: normal; /* либо italic, oblique и т.д. */
   }
 
 
@@ -157,6 +157,7 @@ border-radius: 44.939px;
 background: var(--button-background);
 margin: 6px;
 }
+
 .button {
   color: var(--grey-color);
   font-size: 1.4rem;
@@ -171,6 +172,8 @@ margin: 6px;
   background: #182632;
   border: none;
   margin: 6px;
+  font-family: "Montserrat";
+  font-weight: 600;
 }
 
 .section-all-the-tools {
@@ -209,7 +212,7 @@ color: var(--yellow-color)
 
 
 .button-youtube {
-  font-family: 'Montserrat', serif;
+  font-family: 'Montserrat';
   font-size: 1.5rem;
   line-height: 2.4;
   display: inline-flex;
@@ -303,17 +306,9 @@ height: 14px;
   margin-bottom: 24px;
 }
 
-.weekly-digest {
-  flex-shrink: 0;
-  border-radius: 22px;
-  border: 1px solid var(--color-for-border);
-  background: var(--color-for-table);
-  margin-top: 28px;
-}
-
 .subscribe {
   display: inline-flex;
-  padding: 10px 50px;
+  padding: 10px 0px;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
@@ -328,16 +323,39 @@ height: 14px;
   margin-left: 24px;
   margin-right: 24px;
   max-width: 352px;
+  width: 85%;
+  margin-bottom: 24px;
   
 }
 
 .blue-cont {
   border-radius: 20px;
   background: var(--for-table-blue);
-  max-width: 350px;
+  max-width: 400px;
   margin-left: 16px;
   margin-right: 16px;
   margin-bottom: 16px;
+  justify-content: center;
+}
+
+.purple-cont {
+  border-radius: 20px;
+  background: #E2C1F9;
+  max-width: 400px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  justify-content: center;
+}
+
+.yellow-cont {
+  border-radius: 20px;
+  background: #DBE268;
+  max-width: 400px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  justify-content: center;
 }
 
 .pink {
@@ -348,6 +366,7 @@ font-size: 14px;
 font-style: normal;
 font-weight: 600;
 line-height: 16px; /* 114.286% */
+
 }
 
 .yellow {
@@ -410,6 +429,7 @@ body {
   margin-inline: auto;
   padding-left: 0;  
   align-items: center;
+  text-align: center;
 }
 
 .image {
@@ -436,6 +456,7 @@ body {
   background: #FFA800;
   margin-top: -16px;
   font-weight: 700;
+  margin-bottom: 0px;
 }
 
 .Design-title {
@@ -449,6 +470,8 @@ body {
   line-height: 1.28;
   color: var(--text-color);
   font-weight: 700;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 .Tools-title {
@@ -523,10 +546,13 @@ border-radius: 22px;
 background: #14212D;
 justify-content: center;
 align-items: center;
-max-width: 328px;
 margin-inline: auto;
 flex-shrink: 0;
 flex-direction: column;
+margin-left: 16px;
+margin-right: 16px;
+display: inline-block;
+max-width: 400px;
 }
 
 .Weekly-digest {
@@ -550,7 +576,7 @@ font-style: normal;
 font-weight: 600;
 line-height: 1.28;
 display: inline-flex;
-padding: 13px 80px 13px 18px;
+padding: 13px 0px 13px 18px;
 align-items: center;
 border-radius: 10px;
 border: 1px solid #2A3744;
@@ -558,6 +584,8 @@ background: #121E28;
 margin-right: 25px;
 margin-left: 24px;
 margin-bottom: 16px;
+width: 85%;
+max-width: 351px;
 }
 
 .SuperDao {
@@ -587,7 +615,7 @@ margin-right: 20px;
 }
 
 .read {
-  font-family: "Montserrat";
+font-family: "Montserrat";
 font-size: 1.4rem;
 font-style: normal;
 font-weight: 700;
@@ -595,25 +623,9 @@ line-height: normal;
 text-align: left;
 margin-left: 20px;
 margin-bottom: 20px;
+margin-right: 247px;
 color: var(--black);
-}
-
-.purple-cont {
-  border-radius: 20px;
-  background: #E2C1F9;
-  max-width: 350px;
-  margin-left: 16px;
-  margin-right: 16px;
-  margin-bottom: 16px;
-}
-
-.yellow-cont {
-  border-radius: 20px;
-  background: #DBE268;
-  max-width: 350px;
-  margin-left: 16px;
-  margin-right: 16px;
-  margin-bottom: 16px;
+display: inline-block;
 }
 
 .list-project-help {
@@ -641,7 +653,8 @@ font-size: 18px;
 font-style: normal;
 font-weight: 700;
 line-height: 32px;
-margin-top: 40px;
+display: flex;
+justify-content: center;
 }
 
 .cont {
@@ -654,6 +667,7 @@ margin-top: 40px;
   margin-right: 16px;
   text-align: start;
   margin-bottom: 16px;
+  display: inline-block;
 }
 
 .understanding {
@@ -666,43 +680,53 @@ line-height: 24px;
 text-align: left;
 margin-left: 20px;
 margin-right: 20px;
+margin-top: 0px;
+margin-bottom: 0px;
 }
 
 .rectangle {
-  margin: 24px 268px 16px 20px;
+  margin-top: 24px;
+  margin-left: 20px;
+  margin-right: 268px;
+  margin-bottom: 16.11px;
+  display: inline;
 }
 
 .the-pomp {
-  color: #E2E2E2;
-
+color: #E2E2E2;
 font-family: "Montserrat";
-font-size: 14px;
+font-size: 1.4rem;
 font-style: normal;
 font-weight: 600;
 line-height: 24px;
 margin-left: 20px;
 margin-right: 20px;
+margin-top: 12px;
+margin-bottom: 0px;
 }
 
 .anthony {
   color: #E2E2E2;
 font-family: "Montserrat";
-font-size: 14px;
+font-size: 1.4rem;
 font-style: normal;
 font-weight: 600;
 line-height: 20px;
 margin-left: 20px;
 margin-right: 20px;
+margin-top: 0px;
 }
 
 .listen {
-  color: #FFF;
+color: #FFF;
 font-family: "Montserrat";
-font-size: 12px;
+font-size: 1.2rem;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
-margin: 24px 268px 16px 20px;
+margin-left: 20px;
+margin-bottom: 20px;
+display: block;
 }
 
 
@@ -711,7 +735,6 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-gap: 31.901px;
 background: #121E28;
 }
 
@@ -726,15 +749,230 @@ line-height: normal;
 
 .list-footer {
   padding-inline: 0;
-  max-width: 306px;
   display: flex;
   gap: 0.5em;
   font-size: 1.2rem;
   line-height: 1.5;
   flex-wrap: wrap;
   list-style-type: none;
-  margin-top: 24px;
   margin-inline: auto;
   padding-left: 0;  
   align-items: center;
+  margin: 0;
+}
+
+.image-footer {
+  margin: 32px 70px;
+}
+
+.see-all-div {
+  margin-top: 40px;
+  margin-bottom: 80px;
+  margin-left: 122px;
+  margin-right: 122px;
+}   
+
+
+.footer-list-second {
+  margin: 0px 40px;
+}
+
+.back-list {
+  display: flex;
+  margin: 32px;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.telegram {
+  border-radius: 100px;
+  background: rgba(119, 149, 255, 0.15);
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: 7px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.youtube {
+  border-radius: 100px;
+  background: rgba(247, 135, 135, 0.15);
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.discord {
+  border-radius: 100px;
+  background: rgba(146, 119, 255, 0.15);
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.youtube-svg {
+  margin-right: 8px;
+}
+
+.watch {
+  color: #FFF;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.org-first {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 138px;
+  display: inline;
+}
+
+.org-second {
+  margin-top: 35.06px;
+  margin-left: 20px;
+  margin-right: 203px;
+  display: inline;
+}
+
+.org-third {
+  margin-left: 20px;
+  margin-top: 34.29px;
+  margin-right: 189px;
+}
+
+.backed-by {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.another-titles {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.8rem;
+  font-style: normal;
+  font-weight: 700; 
+  line-height: 1.28;
+  color: var(--text-color);
+  margin-top: 80px;
+  margin-bottom: 24px;
+}
+
+.company {
+  border-radius: 12px;
+  border: 1.329px solid #2A3744;
+  background: #121E28;
+  display: flex;
+  padding: 16px 20px;
+  overflow: hidden;
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+
+.company-second {
+  border-radius: 12px;
+  border: 1.329px solid #2A3744;
+  background: #121E28;
+  display: flex;
+  padding: 13px 22px;
+  overflow: hidden;
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+
+.company-third {
+  border-radius: 12px;
+  border: 1.329px solid #2A3744;
+  background: #121E28;
+  display: flex;
+  padding: 0px 20px;
+  overflow: hidden;
+  margin-right: 16px;
+}
+
+.company-four {
+  border-radius: 12px;
+  border: 1.329px solid #2A3744;
+  background: #121E28;
+  display: flex;
+  padding: 0px 16px;
+  overflow: hidden;
+  margin-right: 16px;
+}
+
+.company-five {
+  border-radius: 12px;
+  border: 1.329px solid #2A3744;
+  background: #121E28;
+  display: flex;
+  padding: 0px 15px;
+  overflow: hidden;
+  margin-right: 16px;
+}
+
+.company-six {
+  border-radius: 12px;
+  border: 1.329px solid #2A3744;
+  background: #121E28;
+  display: flex;
+  padding: 0px 11px;
+  overflow: hidden;
+  margin-right: 16px;
+}
+
+.vika {
+  border-radius: 12px;
+  border: 1.329px solid #2A3744;
+  background: #121E28;
+  display: flex;
+  padding: 0px 0px;
+  overflow: hidden;
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+
+.vika-second {
+  border-radius: 12px;
+  border: 1.329px solid #2A3744;
+  background: #121E28;
+  display: flex;
+  padding: 0px 10px;
+  overflow: hidden;
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+
+.company-seven {
+  border-radius: 12px;
+  border: 1.329px solid #2A3744;
+  background: #121E28;
+  display: flex;
+  padding: 0px 30px;
+  overflow: hidden;
+  margin-right: 16px;
+}
+
+.strelka {
+  margin-left: 8px;
 }
