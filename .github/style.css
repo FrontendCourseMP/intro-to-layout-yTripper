@@ -149,9 +149,7 @@ ul {
 .ready-for-every-project {
 font-size: 1.4rem;
 line-height: 1.14;
-display: inline-flex;
 padding: 12px 14px;
-align-items: flex-start;
 gap: 8px;
 border-radius: 44.939px;
 background: var(--button-background);
@@ -163,8 +161,6 @@ margin: 6px;
   font-size: 1.4rem;
   line-height: 1.14;
   display: inline-flex;
-  width: 84px;
-  height: 40px;
   justify-content: center;
   align-items: center;
   gap: 8px;
@@ -174,6 +170,7 @@ margin: 6px;
   margin: 6px;
   font-family: "Montserrat";
   font-weight: 600;
+  padding: 4px 4px;
 }
 
 .section-all-the-tools {
@@ -336,6 +333,7 @@ height: 14px;
   margin-right: 16px;
   margin-bottom: 16px;
   justify-content: center;
+  display: inline-block;
 }
 
 .purple-cont {
@@ -346,6 +344,7 @@ height: 14px;
   margin-right: 16px;
   margin-bottom: 16px;
   justify-content: center;
+  display: inline-block;
 }
 
 .yellow-cont {
@@ -356,6 +355,7 @@ height: 14px;
   margin-right: 16px;
   margin-bottom: 16px;
   justify-content: center;
+  display: inline-block;
 }
 
 .pink {
@@ -430,6 +430,7 @@ body {
   padding-left: 0;  
   align-items: center;
   text-align: center;
+  justify-content: center;
 }
 
 .image {
@@ -623,9 +624,8 @@ line-height: normal;
 text-align: left;
 margin-left: 20px;
 margin-bottom: 20px;
-margin-right: 247px;
 color: var(--black);
-display: inline-block;
+display: block;
 }
 
 .list-project-help {
@@ -663,11 +663,14 @@ justify-content: center;
   background: #121E28;
   backdrop-filter: blur(2px);
   max-width: 400px;
-  margin-left: 16px;
-  margin-right: 16px;
   text-align: start;
   margin-bottom: 16px;
-  display: inline-block;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 .understanding {
@@ -687,9 +690,8 @@ margin-bottom: 0px;
 .rectangle {
   margin-top: 24px;
   margin-left: 20px;
-  margin-right: 268px;
   margin-bottom: 16.11px;
-  display: inline;
+  display: block;
 }
 
 .the-pomp {
@@ -844,27 +846,26 @@ line-height: normal;
 .org-first {
   margin-top: 20px;
   margin-left: 20px;
-  margin-right: 138px;
-  display: inline;
+  display: block;
 }
 
 .org-second {
-  margin-top: 35.06px;
+  margin-top: 27.04px;
   margin-left: 20px;
-  margin-right: 203px;
-  display: inline;
+  display: block;
 }
 
 .org-third {
   margin-left: 20px;
-  margin-top: 34.29px;
-  margin-right: 189px;
+  margin-top: 48.01px;
+  display: block;
 }
 
 .backed-by {
   display: flex;
   justify-content: center;
   flex-wrap: nowrap;
+  margin: 0px;
 }
 
 .another-titles {
@@ -885,7 +886,6 @@ line-height: normal;
   background: #121E28;
   display: flex;
   padding: 16px 20px;
-  overflow: hidden;
   margin-right: 16px;
   margin-bottom: 16px;
 }
@@ -896,7 +896,6 @@ line-height: normal;
   background: #121E28;
   display: flex;
   padding: 13px 22px;
-  overflow: hidden;
   margin-right: 16px;
   margin-bottom: 16px;
 }
@@ -907,7 +906,6 @@ line-height: normal;
   background: #121E28;
   display: flex;
   padding: 0px 20px;
-  overflow: hidden;
   margin-right: 16px;
 }
 
@@ -917,7 +915,6 @@ line-height: normal;
   background: #121E28;
   display: flex;
   padding: 0px 16px;
-  overflow: hidden;
   margin-right: 16px;
 }
 
@@ -927,7 +924,6 @@ line-height: normal;
   background: #121E28;
   display: flex;
   padding: 0px 15px;
-  overflow: hidden;
   margin-right: 16px;
 }
 
@@ -937,7 +933,6 @@ line-height: normal;
   background: #121E28;
   display: flex;
   padding: 0px 11px;
-  overflow: hidden;
   margin-right: 16px;
 }
 
@@ -947,7 +942,6 @@ line-height: normal;
   background: #121E28;
   display: flex;
   padding: 0px 0px;
-  overflow: hidden;
   margin-right: 16px;
   margin-bottom: 16px;
 }
@@ -957,8 +951,7 @@ line-height: normal;
   border: 1.329px solid #2A3744;
   background: #121E28;
   display: flex;
-  padding: 0px 10px;
-  overflow: hidden;
+  padding: 0px 24px;
   margin-right: 16px;
   margin-bottom: 16px;
 }
@@ -968,11 +961,19 @@ line-height: normal;
   border: 1.329px solid #2A3744;
   background: #121E28;
   display: flex;
-  padding: 0px 30px;
-  overflow: hidden;
+  padding: 0px 67px;
   margin-right: 16px;
 }
 
 .strelka {
   margin-left: 8px;
+}
+
+.contauner {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.class {
+  overflow: hidden;
 }
