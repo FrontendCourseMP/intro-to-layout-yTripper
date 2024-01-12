@@ -52,6 +52,7 @@ html {
   --purple-light: #E2C1F9;
   --for-table-blue: #77E6FF;
   --black: #10151A;
+  --red:	#a02d2d ;
 }
 
 a {
@@ -148,37 +149,6 @@ line-height: 1.8;
 color: var(--list-special);
 margin: 2.4rem 1.6rem 0 1.6rem;
 padding-left: 0rem;
-}
-.second-list-special {
-text-align: center;
-font-family: "Roboto";
-font-size: 2rem;
-font-style: normal;
-font-weight: 700;
-line-height: 3.6rem;
-color: var(--second-list-special)
-}
-.third-list-special {
-  text-align: center;
-  font-family: "Roboto";
-  font-size: 2rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.8;
-  color: var(--list-special);
-  margin: 2.4rem 1.6rem 0 1.6rem;
-  padding-left: 0rem;
-}
-
-.four-list-special {
-  text-align: center;
-  font-family: "Roboto";
-  font-size: 2rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.8;
-  color: var(--list-special);
-  padding-left: 0rem;
 }
 
 ul {
@@ -1248,7 +1218,7 @@ line-height: normal;
 }
 
 .about-grid {
-color: var(--yellow-color);
+color: var(--text-color);
 font-family: "Montserrat";
 font-size: 1.4rem;
 font-style: normal;
@@ -1296,6 +1266,11 @@ margin-bottom: 4.7rem;
 
 .image-footer {
   margin: 3.2rem 7rem;
+}
+
+.image-footer-form {
+  margin: 3.2rem 7rem;
+  transform: scale(150%) rotate(30deg);
 }
 
 .see-all-div {
@@ -1746,22 +1721,6 @@ margin-bottom: 4.7rem;
     font-size: 3.2rem;
     line-height: 1.56;
   }
-  .second-list-special {
-    font-size: 3.2rem;
-    line-height: 1.56;
-    color: var(--list-special);
-  }
-  .third-list-special {
-    font-size: 3.2rem;
-    line-height: 1.56;
-    color: var(--second-list-special);
-    margin-top: 0rem;
-  }
-  .four-list-special {
-    font-size: 3.2rem;
-    line-height: 1.56;
-    margin-top: 0rem;
-  }
   .Tools-title {
     margin-top: 10rem;
     font-size: 3.6rem;
@@ -1953,6 +1912,9 @@ margin-bottom: 4.7rem;
   .image-footer {
     display: none;
   }
+  .image-footer-form {
+    display: none;
+  }
   .list-footer {
     display: none;
   }
@@ -1964,6 +1926,10 @@ margin-bottom: 4.7rem;
     justify-content: space-between;
   }
   .svg-div {
+    margin-top: 4.1rem;
+    margin-bottom: 4.6rem;
+  }
+  .svg-div-form {
     margin-top: 4.1rem;
     margin-bottom: 4.6rem;
   }
@@ -2018,7 +1984,7 @@ margin-bottom: 4.7rem;
     margin-bottom: 3.6rem;
   }
   .about-second {
-    color: #FFF;
+    color: var(--text-color);
   font-family: "Montserrat";
   font-size: 1.4rem;
   font-style: normal;
@@ -2029,7 +1995,7 @@ margin-bottom: 4.7rem;
   margin-bottom: 4.7rem;
   }
   .about-second-grid {
-  color: var(--yellow-color);
+  color: var(--text-color);
   font-family: "Montserrat";
   font-size: 1.4rem;
   font-style: normal;
@@ -2153,17 +2119,6 @@ margin-bottom: 4.7rem;
   .list-special {
     font-size: 5.4rem;
     line-height: 1.18;
-  }
-  .four-list-special {
-    color: var(--second-list-special);
-    font-size: 5.4rem;
-  }
-  .third-list-special {
-    color: var(--list-special);
-    font-size: 5.4rem;
-  }
-  .second-list-special {
-    font-size: 5.4rem;
   }
   .Tools-title {
     margin-top: 20rem;
@@ -2457,6 +2412,9 @@ margin-bottom: 4.7rem;
   .svg-div {
     margin-top: 7rem;
   }
+  .svg-div-form {
+    margin-top: 7rem;
+  }
   .div-press {
     max-width: 110rem;
   }
@@ -2632,7 +2590,7 @@ margin-bottom: 4.7rem;
   padding: 1.3rem 0rem 1.3rem 1.8rem;
   align-items: center;
   border-radius: 1rem;
-  border: 0.1rem solid #2A3744;
+  border: 0.1rem solid var(--red);
   background: #121E28;
   margin-right: 2.5rem;
   margin-left: 2.4rem;
@@ -2876,4 +2834,274 @@ margin-bottom: 4.7rem;
   position: fixed;
   bottom: 0;
   width: 100%;
+}
+
+::selection {
+  color: var(--second-list-special);
+}
+
+.subscribe:active {
+  color: var(--text-color);
+  background-color: var(--purple);
+}
+
+.subscribe:hover {
+  color: var(--text-color);
+  background-color: var(--purple);
+  transition: 0.6s;
+  transform: scale(110%) rotate(5deg);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3)
+}
+
+.specificly:hover {
+  color: var(--second-list-special);
+  transition: 0.6s;
+  transform: scale(110%) rotate(5deg);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3)
+}
+
+.about-second:hover {
+  color: var(--yellow-color);
+  transition: 0.6s;
+  transform: scale(110%) rotate(5deg);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3)
+}
+
+.about-second-grid:hover {
+  color: var(--yellow-color);
+  transition: 0.6s;
+  transform: scale(110%) rotate(5deg);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3)
+}
+
+.Jobs:hover {
+  color: var(--yellow-color);
+  transition: 0.6s;
+  transform: scale(110%) rotate(5deg);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3)
+}
+
+.Legal:hover {
+  color: var(--yellow-color);
+  transition: 0.6s;
+  transform: scale(110%) rotate(5deg);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3)
+}
+
+.about:hover {
+  color: var(--yellow-color);
+  transition: 0.6s;
+  transform: scale(110%) rotate(5deg);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3)
+}
+
+.about-grid:hover {
+  color: var(--yellow-color);
+  transition: 0.6s;
+  transform: scale(110%) rotate(5deg);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3)
+}
+
+.button-youtube:active {
+  color: var(--second-list-special);
+  background-color: var(--orange);
+}
+
+.get-started-button:active {
+  color: var(--second-list-special);
+  background-color: var(--orange);
+}
+
+.login:active {
+  color: var(--black);
+  background-color: var(--text-color);
+}
+
+.button-youtube:hover {
+  color: var(--second-list-special);
+  background-color: var(--orange);
+  transition: 0.6s;
+  transform: scale(110%) rotate(5deg);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3)
+}
+
+.get-started-button:hover {
+  color: var(--second-list-special);
+  background-color: var(--orange);
+  transition: 0.6s;
+  transform: scale(110%) rotate(5deg);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3)
+}
+
+.login:hover {
+  color: var(--black);
+  background-color: var(--text-color);
+  transition: 0.6s;
+  transform: scale(110%) rotate(5deg);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3)
+}
+
+.login:focus {
+  outline: 0.2rem solid var(--for-table-blue);
+}
+
+.get-started-button:focus {
+  outline: 0.2rem solid var(--for-table-blue);
+}
+
+.button-youtube:focus {
+  outline: 0.2rem solid var(--for-table-blue);
+}
+
+.about-grid:focus {
+  outline: 0.2rem solid var(--for-table-blue);
+}
+
+.Legal:focus {
+  outline: 0.2rem solid var(--for-table-blue);
+}
+
+.Jobs:focus {
+  outline: 0.2rem solid var(--for-table-blue);
+}
+
+.about-second:focus {
+  outline: 0.2rem solid var(--for-table-blue);
+}
+
+.about-second-grid:focus {
+  outline: 0.2rem solid var(--for-table-blue);
+}
+
+.subscribe:focus {
+  outline: 0.2rem solid var(--for-table-blue);
+}
+
+input::placeholder {
+  color: var(--yellow-color);
+  opacity: 0.5;
+}
+
+.svg-div-form {
+  transform: scale(150%) rotate(30deg);
+}
+
+label:focus-within {
+  outline: 0.2rem solid var(--for-table-blue);
+}
+
+dl {
+  counter-reset: item;
+  font-size: 2.2rem;
+  color: var(--text-color);
+  font-family: "Roboto";
+}
+
+dt {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 1.2em;
+  display: inline-block;
+}
+
+dt::before {
+  content: counter(item, upper-alpha) ". ";
+  counter-increment: item;
+  font-size: 1.5em;
+  margin-right: 5px;
+}
+
+dd {
+  margin: 0;
+  padding: 0 0 0 20px;
+  position: relative;
+}
+
+dd::before {
+  content: "🛈";
+}
+
+
+input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+}
+
+.second-quest dl:nth-child(odd) dt {
+  color: var(--purple-light);
+}
+
+.second-quest dl:nth-child(even) dt {
+  color: var(--yellow-color);
+}
+
+.second-quest {
+  margin-bottom: 30rem;
+}
+
+.two-sides-card {
+  perspective: 1000px;
+  width: 200px;
+  height: 300px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.two-sides-card:hover {
+  transform: rotateY(180deg);
+}
+
+.two-sides-card-second {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.two-sides-card:hover {
+  transform: rotateY(180deg);
+}
+
+.two-sides-card-second {
+  transform: rotateY(180deg);
+}
+
+.two-sides-card-font {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.two-sides-card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+.queue {
+  overflow: hidden;
+  width: 50%;
+  height: 50%;
+  animation: marquee 6s linear infinite;
+  margin-top: 50rem;
+}
+
+
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.mega-image {
+  width: 25%;
+  height: 25%;
+  display: inline;
 }
