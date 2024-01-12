@@ -38,7 +38,7 @@ html {
   --background-Tertiary-color: #252B36;
   --button-background: #182632;
   --pink-for-buttons: #FFB4D3;
-  --list-special: #37424D;
+  --list-special: #3f5061;
   --second-list-special: #23C9DE;
   --grey-color: #8395A7;
   --yellow-color: #FFC803;
@@ -1510,12 +1510,12 @@ margin-bottom: 4.7rem;
 }
 
 .container-grid {
-  border: black solid 3px;
+  border: black solid 0.3rem;
   border-radius: 3%;
   background-color: black;
   display: grid;
-  width: 800px;
-  height: 800px;
+  width: 80rem;
+  height: 80rem;
   grid-template-columns: 1.5fr 1.5fr 1fr 1fr;
   grid-template-rows: 0.2fr 1fr 1fr 0.5fr;
   grid-gap: 1rem;
@@ -2422,15 +2422,14 @@ margin-bottom: 4.7rem;
 
 .sr-only {
   position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
+  width: 0.1rem;
+  height: 0.1rem;
   padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
+  margin: -0.1rem;
   overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
 
 .label-registration {
@@ -2998,8 +2997,8 @@ dl {
 }
 
 dt {
-  margin-top: 10px;
-  margin-bottom: 5px;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
   font-size: 1.2em;
   display: inline-block;
 }
@@ -3008,12 +3007,12 @@ dt::before {
   content: counter(item, upper-alpha) ". ";
   counter-increment: item;
   font-size: 1.5em;
-  margin-right: 5px;
+  margin-right: 0.5rem;
 }
 
 dd {
   margin: 0;
-  padding: 0 0 0 20px;
+  padding: 0 0 0 2rem;
   position: relative;
 }
 
@@ -3039,9 +3038,9 @@ input[type="checkbox"]:checked + label {
 }
 
 .two-sides-card {
-  perspective: 1000px;
-  width: 200px;
-  height: 300px;
+  perspective: 100rem;
+  width: 20rem;
+  height: 30rem;
   position: relative;
   transform-style: preserve-3d;
   transition: transform 0.6s;
