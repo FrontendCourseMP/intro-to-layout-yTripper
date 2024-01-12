@@ -508,6 +508,18 @@ margin-top: 3.5rem;
 margin-right: 2.4rem;
 }
 
+.product-forma {
+  color: var(--yellow-color);
+  font-family: "Montserrat";
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: inline-flex;
+  margin-top: 1.6rem;
+  margin-right: 2.4rem;
+  }
+
 .product-jobs {
   color: #FFF;
   font-family: "Montserrat";
@@ -579,6 +591,10 @@ border: none;
   }
   .product {
     display: inline-flex;
+  }
+  .product-forma {
+    display: inline-flex;
+    margin-top: 3.5rem;
   }
   .logotip {
     margin-top: 3.04rem;
@@ -1054,6 +1070,10 @@ display: block;
   padding-left: 0;  
   align-items: center;
   justify-content: center;
+}
+
+.list-project-help-second {
+  display: none;
 }
 
 @media screen and (min-width: 560px) {
@@ -2039,6 +2059,11 @@ margin-bottom: 4.7rem;
     margin-right: 4.4rem;
     font-size: 2rem;
   }
+  .product-forma {
+    margin-top: 4.1rem;
+    margin-right: 4.4rem;
+    font-size: 2rem;
+  }
   .product-jobs {
     margin-top: 4.1rem;
     margin-right: 21.2rem;
@@ -2448,4 +2473,407 @@ margin-bottom: 4.7rem;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.label-registration {
+  border-radius: 2.2rem;
+  background: #14212D;
+  margin-inline: auto;
+  flex-shrink: 0;
+  flex-direction: column;
+  max-width: 80rem;
+  display: flex;
+  margin: 0 auto;
+  height: 75rem;
+  margin-bottom: 20rem;
+}
+
+.registration {
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 2.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.22;
+  color: var(--text-color);
+  margin-top: 2.5rem;
+  margin-bottom: 5rem;
+}
+.cont-name {
+  display: flex;
+}
+.name {
+  display: block;
+  text-align: left;
+  font-family: "Roboto";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.22;
+  color: var(--text-color);
+  margin-bottom: 0;
+  margin-top: 1rem;
+  margin-left: 5rem;
+  margin-right: 10.5rem;
+}
+
+.date {
+  display: block;
+  text-align: left;
+  font-family: "Roboto";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.22;
+  color: var(--text-color);
+  margin-bottom: 0;
+  margin-top: 1rem;
+  margin-left: 5rem;
+  margin-right: 3rem;
+}
+
+.gender {
+  display: block;
+  text-align: left;
+  font-family: "Roboto";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.22;
+  color: var(--text-color);
+  margin-bottom: 0;
+  margin-top: 1rem;
+  margin-left: 5rem;
+}
+
+.gender-male {
+  display: block;
+  text-align: left;
+  font-family: "Roboto";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.22;
+  color: var(--text-color);
+  margin-top: 0rem;
+  margin-bottom: 0;
+  margin-top: 1rem;
+  margin-left: 12rem;
+}
+
+.connection {
+  display: block;
+  text-align: left;
+  font-family: "Roboto";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.22;
+  color: var(--text-color);
+  margin-top: 0rem;
+  margin-bottom: 0;
+  margin-top: 1rem;
+  margin-left: 5rem;
+}
+
+.password {
+  display: block;
+  text-align: left;
+  font-family: "Roboto";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.22;
+  color: var(--text-color);
+  margin-bottom: 0;
+  margin-top: 1rem;
+  margin-left: 5rem;
+  margin-right: 8rem;
+}
+
+.email {
+  display: block;
+  text-align: left;
+  font-family: "Roboto";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.22;
+  color: var(--text-color);
+  margin-bottom: 0;
+  margin-top: 1rem;
+  margin-left: 5rem;
+  margin-right: 7rem;
+}
+
+.phone {
+  display: block;
+  text-align: left;
+  font-family: "Roboto";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.22;
+  color: var(--text-color);
+  margin-top: 0rem;
+  margin-bottom: 0;
+  margin-top: 1rem;
+  margin-left: 5rem;
+}
+
+.input-name {
+  color: #3D4C5B;
+  font-family: "Montserrat";
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.28;
+  display: inline-flex;
+  padding: 1.3rem 0rem 1.3rem 1.8rem;
+  align-items: center;
+  border-radius: 1rem;
+  border: 0.1rem solid #2A3744;
+  background: #121E28;
+  margin-right: 2.5rem;
+  margin-left: 2.4rem;
+  margin-bottom: 1.6rem;
+  width: 85%;
+  max-width: 40.1rem;
+}
+
+.input-gender {
+  color: #3D4C5B;
+  font-family: "Montserrat";
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.28;
+  display: inline-flex;
+  padding: 1.3rem 0rem 1.3rem 1.8rem;
+  align-items: center;
+  border-radius: 1rem;
+  border: 0.1rem solid #2A3744;
+  background: #121E28;
+  margin-right: 2.5rem;
+  margin-left: 2.4rem;
+  margin-bottom: 1.6rem;
+  max-width: 40.1rem;
+}
+
+.input-connection {
+  color: #3D4C5B;
+  font-family: "Montserrat";
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.28;
+  display: inline-flex;
+  padding: 1.3rem 0rem 1.3rem 1.8rem;
+  align-items: center;
+  border-radius: 1rem;
+  border: 0.1rem solid #2A3744;
+  background: #121E28;
+  margin-right: 2.5rem;
+  margin-left: 2.4rem;
+  margin-bottom: 1.6rem;
+  max-width: 35.1rem;
+}
+
+.button-yellow {
+  display: inline-flex;
+  padding: 1rem 0rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  background: var(--yellow-color, #DBE268);
+  color: #10151A;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.71;
+  margin-left: 2.4rem;
+  margin-right: 2.4rem;
+  max-width: 10.2rem;
+  width: 85%;
+  margin-bottom: 2.4rem;
+}
+
+.button-purple {
+  display: inline-flex;
+  padding: 1rem 0rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  background: var(--purple-light, #E2C1F9);
+  color: #10151A;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.71;
+  margin-left: 2.4rem;
+  margin-right: 2.4rem;
+  max-width: 25.2rem;
+  width: 85%;
+  margin-bottom: 2.4rem;
+}
+
+.button-form {
+  margin-top: 6rem;
+}
+
+.required-text {
+  color: red;
+  font-size: 1.4rem;
+  list-style-type: none;
+  padding-inline: 0;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat";
+  margin-top: 1.5rem;
+  opacity: 0.8;
+}
+
+.information {
+  font-family: "Roboto";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.22;
+  color: var(--text-color);
+}
+
+.contacts {
+  font-family: "Roboto";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.22;
+  color: var(--text-color);
+}
+
+.input-name-pc {
+  color: #3D4C5B;
+  font-family: "Montserrat";
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.28;
+  display: inline-flex;
+  padding: 1.3rem 0rem 1.3rem 1.8rem;
+  align-items: center;
+  border-radius: 1rem;
+  border: 0.1rem solid #2A3744;
+  background: #121E28;
+  margin-right: 2.5rem;
+  margin-left: 2.4rem;
+  margin-bottom: 1.6rem;
+  width: 85%;
+  max-width: 40.1rem;
+}
+
+.input-name-tel {
+  color: #3D4C5B;
+  font-family: "Montserrat";
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.28;
+  display: none;
+  padding: 1.3rem 0rem 1.3rem 1.8rem;
+  align-items: center;
+  border-radius: 1rem;
+  border: 0.1rem solid #2A3744;
+  background: #121E28;
+  margin-right: 2.5rem;
+  margin-left: 2.4rem;
+  margin-bottom: 1.6rem;
+  width: 85%;
+  max-width: 40.1rem;
+}
+
+@media screen and (max-width: 800px) {
+  .date {
+    margin: auto;
+    margin-left: 0;
+  }
+  .password {
+    margin: auto;
+    margin-left: 0;
+  }
+  .name {
+    margin: auto;
+    margin-left: 0;
+  }
+  .email {
+    margin: auto;
+    margin-left: 0;
+  }
+  .phone {
+    margin: auto;
+    margin-left: 0;
+    margin-right: 0rem;
+  }
+  .button-purple {
+    max-width: 15rem;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .input-name-tel {
+    display: inline-flex;
+    max-width: 10rem;
+    margin: auto;
+    margin-left: 2rem;
+    margin-right: 0;
+  }
+  .input-name-pc{
+    display: none;
+  }
+  .input-name {
+    margin: auto;
+    max-width: 10rem;
+  }
+  .gender-male {
+    margin: auto;
+    font-size: 1.4rem
+  }
+  .gender {
+    margin: auto;
+    font-size: 1.4rem;
+  }
+  .required-text {
+    font-size: 0.7rem;
+  }
+  .name {
+    font-size: 1.4rem;
+  }
+  .date {
+    font-size: 1.4rem;
+  }
+  .password {
+    font-size: 1.4rem;
+  }
+  .email {
+    font-size: 1.4rem;
+  }
+  .phone {
+    font-size: 1.4rem;
+  }
+  .input-name {
+    font-size: 1.4rem;
+  }
+  .connection {
+    margin: auto;
+    font-size: 1.4rem;
+  }
+}
+
+.mega-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }

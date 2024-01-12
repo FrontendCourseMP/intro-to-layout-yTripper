@@ -15,6 +15,7 @@
                 <img src="img/Logo-first.svg">
             </picture>
         </a>
+        <a href="form.html" class="product-forma">Форма</a>
         <a href="" class="product">Product</a>
         <a href="" class="product">Use cases</a>
         <a href="" class="product">Learn</a>
@@ -239,11 +240,11 @@
             </ul>
         </section>
         <section>
-            <form action="multipart/form-data" class="forma">
+            <form action="//httpbin.org/post" class="forma" method="post" enctype="multipart/form-data">
                 <h2 class ="Weekly-digest">Weekly digest</h2>
                 <p class="news">Latest news in DAOs and Web3</p>
                 <div class="divich">
-                    <input type="email" placeholder="Your email" class="input-email">
+                    <input type="email" placeholder="Your email" name="email" id="email" class="input-email">
                     <button type="submit" class="subscribe">Subscribe</button>
                 </div>
             </form>
