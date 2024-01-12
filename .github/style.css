@@ -3104,3 +3104,26 @@ input[type="checkbox"]:checked + label {
   height: 25%;
   display: inline;
 }
+
+.skip-link {
+  position: absolute;
+  top: -4rem;
+  left: 0;
+  background-color: var(--yellow-color);
+  color: var(--black);
+  padding: 1rem;
+  z-index: 1000;
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.skip-link:focus {
+  top: 0;
+  opacity: 1;
+}
+
+.skip-link:active {
+  top: 0;
+  opacity: 1;
+}
