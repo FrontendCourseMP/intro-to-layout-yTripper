@@ -1440,6 +1440,7 @@ margin-bottom: 4.7rem;
   background: #121E28;
   display: flex;
   padding: 0rem 2rem;
+  padding-top: 1.7rem;
   margin-right: 1.6rem;
 }
 
@@ -1449,6 +1450,7 @@ margin-bottom: 4.7rem;
   background: #121E28;
   display: flex;
   padding: 0rem 1.6rem;
+  padding-top: 1.7rem;
   margin-right: 1.6rem;
 }
 
@@ -1467,13 +1469,11 @@ margin-bottom: 4.7rem;
   background: #121E28;
   display: flex;
   padding: 0rem 1.1rem;
+  padding-top: 1rem;
   margin-right: 1.6rem;
 }
 
 .vika {
-  border-radius: 1.2rem;
-  border: 0.1329rem solid #2A3744;
-  background: #121E28;
   display: flex;
   padding: 0rem 0rem;
   margin-right: 1.6rem;
@@ -1481,11 +1481,8 @@ margin-bottom: 4.7rem;
 }
 
 .vika-second {
-  border-radius: 1.2rem;
-  border: 0.1329rem solid #2A3744;
-  background: #121E28;
   display: flex;
-  padding: 0rem 2.4rem;
+  padding: 0rem 0rem;
   margin-right: 1.6rem;
   margin-bottom: 1.6rem;
 }
@@ -1496,6 +1493,7 @@ margin-bottom: 4.7rem;
   background: #121E28;
   display: flex;
   padding: 0rem 6.7rem;
+  padding-top: 1.7rem;
   margin-right: 1.6rem;
 }
 
@@ -2935,6 +2933,20 @@ margin-bottom: 4.7rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3)
 }
 
+.see-all-in-div:hover {
+  color: var(--yellow-color);
+  transition: 0.6s;
+  transform: scale(110%) rotate(5deg);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3)
+}
+
+.see-all:hover {
+  color: var(--yellow-color);
+  transition: 0.6s;
+  transform: scale(110%) rotate(5deg);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3)
+}
+
 .watch:hover {
   color: var(--yellow-color);
   transition: 0.6s;
@@ -3052,6 +3064,14 @@ margin-bottom: 4.7rem;
 }
 
 .about-second:focus {
+  outline: 0.2rem solid var(--for-table-blue);
+}
+
+.see-all-in-div:focus {
+  outline: 0.2rem solid var(--for-table-blue);
+}
+
+.see-all:focus {
   outline: 0.2rem solid var(--for-table-blue);
 }
 
