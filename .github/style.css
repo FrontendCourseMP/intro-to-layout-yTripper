@@ -537,6 +537,24 @@ border: none;
   margin-bottom: 2rem;
 }
 
+.list-project-eter {
+  padding-inline: 0;
+  max-width: 35rem;
+  display: flex;
+  gap: 0.5em;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin-top: 2.4rem;
+  margin-inline: auto;
+  padding-left: 0;  
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
 .org-first-1200 {
   display: none;
 }
@@ -595,6 +613,9 @@ border: none;
     margin-bottom: 4.4rem;
   }
   .list-project {
+    margin-top: 0rem;
+  }
+  .list-project-eter {
     margin-top: 0rem;
   }
   .pointer {
@@ -782,12 +803,19 @@ body {
   margin: 0;
 }
 
+.list-project-eter p{
+  margin: 0;
+}
+
 .list-project-second {
   display: none;
 }
 
 @media screen and (min-width: 769px) {
   .list-project {
+    max-width: 64rem;
+  }
+  .list-project-eter {
     max-width: 64rem;
   }
 }
@@ -2129,6 +2157,9 @@ margin-bottom: 4.7rem;
   .list-project {
     max-width: 110rem;
   }
+  .list-project-eter {
+    max-width: 110rem;
+  }
   .projects-launch {
     padding: 0.4rem 2.4rem;
     font-size: 1.8rem;
@@ -2166,7 +2197,7 @@ margin-bottom: 4.7rem;
     font-size: 5.4rem;
     margin-bottom: 4.4rem;
   }
-  .list-project {
+  .list-project-eter {
     display: none;
   }
   .list-project-second {
